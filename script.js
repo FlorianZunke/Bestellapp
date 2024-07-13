@@ -45,23 +45,6 @@ function renderBasketPrice() {
 }
 
 
-// function renderMobileBasketDishes() {
-//     let mobileBasketCard = document.getElementById('mobile_basket_div');
-
-//     mobileBasketCard.innerHTML = '';
-//     for (let basketIndex = 0; basketIndex < basketDishname.length; basketIndex++) {
-//         mobileBasketCard.innerHTML += getBasketDishHTML(basketIndex);
-//     }
-//     renderBasketPrice();
-// }
-
-
-// function renderMobileBasketPrice() {
-//     let mobileBasketPriceCard = document.getElementById('mobile_basket_div');
-//     mobileBasketPriceCard.innerHTML += getBasketPriceHTML();
-// }
-
-
 function addItemToBasket(index, dishIndex) {
     let price = dishes[index].menus[dishIndex].price;
     let dishName = dishes[index].menus[dishIndex].name;
