@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bestellapp</title>
+
+    <link rel="icon" href="./assets/icons/favicon_bestellapp.png">
+
+    <link rel="stylesheet" href="./styles/fonts.css">
+    <link rel="stylesheet" href="./styles/assets.css">
+    <link rel="stylesheet" href="./styles/display.css">
+    <link rel="stylesheet" href="./styles/standart.css">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="./scripts/db.js"></script>
+    <script src="./scripts/templates.js"></script>
+    <script src="script.js"></script>
+</head>
+
+<body onload="init()">
+    <div class="d-clm">
+        <header class="d-flex-bw-c">
+            <h1>Bestellapp</h1>
+        </header>
+
+        <section id="main_content" class="d-row-c main">
+            <div id="calc_width" class="calc-width ">
+                <section class="d-clm">
+                    <div class="restaurant_description dish_imgs d-flex-c-end">
+                        <div class="position_restaurant_img">
+                            <img class="restaurant_img" src="./assets/img/restaurant_img.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="restaurant_evaluation d-clm d-flex-even-st">
+                        <div class="d-clm">
+                            <h2>Dragons Meal</h2>
+                            <span class="description">Bewertung : 4.5 / 5 Sterne <br>Das lieblings Restaurant der Fast
+                                Food liebenden. Mit schnellen Lieferzeiten und nur 5
+                                Euro Lieferkosten.</span>
+                        </div>
+                    </div>
+                </section>
+
+                <nav class="d-flex-st-c gap nav_container">
+                    <a href="#Pizza">Pizza</a>
+                    <a href="#Burger">Burger</a>
+                    <a href="#Beilagen">Beilagen</a>
+                </nav>
+
+                <section class="d-row-c">
+                    <section id="section_content" class="max-width"></section>
+                    <div id="fullscreen_basket" class="side_basket mobile_basket_height">
+                        <div>
+                            <h6>Warenkorb</h6>
+                        </div>
+                        <section id="side_basket" class="d-clm mobile_basket_div"></section>
+                    </div>
+                </section>
+            </div>
+        </section>
+
+        <section id="mobile_basket" class="d-flex-c-c section_pad">
+            <button onclick="openMobileBasket()" class="mobile_basket_btn btn_font">Warenkorb</button>
+        </section>
+    </div>
+
+    <section onclick="removeDialogs()" id="dialogs" class="dialogs_position d-none">
+        <div  id="order_dialog"></div>
+    </section>
+
+    <footer id="footer" class="d-flex-end-c">
+        <div>
+            <a class="footer_links" href="#">Datenschutz</a>
+            <a class="footer_links" href="#">Impressum</a>
+        </div>
+    </footer>
+</body>
+
+</html>

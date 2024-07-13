@@ -1,0 +1,129 @@
+/* Strukturaufbau der Seite */
+header {
+    background-color: rgb(255, 129, 1);
+    padding: 10px;
+}
+
+.restaurant_description {
+    background-image: url(./assets/img/head_img.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+}
+
+.position_restaurant_img {
+    position: relative;
+    bottom: -50px;
+}
+
+.restaurant_img {
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+}
+
+.calc-width {
+    width: calc(100% - 250px);
+}
+
+.calc-height {
+    height: calc(100vh - 30px - 61px);
+}
+
+.side_basket {
+    height: 100%;
+    width: 250px;
+    position: sticky;
+    top: 0;
+    overflow: auto;
+}
+
+.mobile_basket {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.dish_box {
+    border: 1px solid lightgray;
+}
+
+.img_pizza {
+    background-image: url(./assets/img/pizza.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.img_burger {
+    background-image: url(./assets/img/burger.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.img_beilagen {
+    background-image: url(./assets/img/sushi.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: rgb(255, 129, 1);
+    height: 30px;
+}
+
+.div_margin:hover {
+    background-color: rgba(255, 129, 1, 0.3);
+}
+
+
+@media (max-width: 600px) {
+    .position_restaurant_img {
+        position: relative;
+        bottom: -37.5px;
+        right: -100px;
+    }
+
+    .restaurant_img {
+        height: 75px;
+        width: 75px;
+        border-radius: 100%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .side_basket {
+        width: 100%;
+        display: none;
+        overflow: auto;
+    }
+
+    .calc-width {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 4000px) and (min-width: 1201px) {
+    .side_basket {
+        height: 100%;
+        width: 300px;
+        position: sticky;
+        top: 0;
+        left: 1920px;
+        right: 0;
+        overflow: auto;
+    }
+
+    .calc-width {
+        width: 100%;
+    }
+}

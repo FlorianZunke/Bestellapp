@@ -1,0 +1,39 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    scroll-behavior: smooth;
+    font-family: 'Open Sans'
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.section_pad {
+    padding: 16px 32px;
+}
+
+.basket_pad_top {
+    padding-top: 16px;
+}
+
+.section_margin {
+    margin: 16px;
+}
+
+.div_margin {
+    margin: 8px 0;
+}
+
+.gap {
+    gap: 16px;
+}
+
+.max-width {
+    max-width: 1920px;
+    width: 100%;
+}
+
+
+
