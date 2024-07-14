@@ -175,6 +175,7 @@ function addDialogs() {
     let dialog = document.getElementById('dialogs');
     let orderDialog = document.getElementById('order_dialog');
 
+    orderDialog.innerHTML = '';
     dialog.classList.remove('d-none');
     orderDialog.innerHTML  += '<div class="d-flex-c-c dialog_text dialogs_window">Deine Bestellung wurde aufgegeben und wird in kürze zu dir geliefert.</div>';
 }
